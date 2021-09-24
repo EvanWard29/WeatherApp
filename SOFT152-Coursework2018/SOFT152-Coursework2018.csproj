@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{44F64525-DD94-4B7E-B55E-0B89BC78C39B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SOFT152_Coursework2018</RootNamespace>
+    <AssemblyName>SOFT152-Coursework2018</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MetOfficeLogoSmall.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Data.cs" />
+    <Compile Include="Yearly Observation\frmAverageFrost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yearly Observation\frmAverageFrost.Designer.cs">
+      <DependentUpon>frmAverageFrost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\frmLocationData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\frmLocationData.Designer.cs">
+      <DependentUpon>frmLocationData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yearly Observation\frmAverageHrsSun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yearly Observation\frmAverageHrsSun.Designer.cs">
+      <DependentUpon>frmAverageHrsSun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yearly Observation\frmAverageAmountRain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yearly Observation\frmAverageAmountRain.Designer.cs">
+      <DependentUpon>frmAverageAmountRain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yearly Observation\frmAverageMinTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yearly Observation\frmAverageMinTemp.Designer.cs">
+      <DependentUpon>frmAverageMinTemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yearly Observation\frmAverageMaxTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yearly Observation\frmAverageMaxTemp.Designer.cs">
+      <DependentUpon>frmAverageMaxTemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyObservation\frmHrsSun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyObservation\frmHrsSun.Designer.cs">
+      <DependentUpon>frmHrsSun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyObservation\frmFrostyDays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyObservation\frmFrostyDays.Designer.cs">
+      <DependentUpon>frmFrostyDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\frmAddLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\frmAddLocation.Designer.cs">
+      <DependentUpon>frmAddLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyObservation\frmAmountRain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyObservation\frmAmountRain.Designer.cs">
+      <DependentUpon>frmAmountRain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yearly Observation\frmAddYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yearly Observation\frmAddYear.Designer.cs">
+      <DependentUpon>frmAddYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyObservation\frmEditMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyObservation\frmEditMonth.Designer.cs">
+      <DependentUpon>frmEditMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yearly Observation\frmEditYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yearly Observation\frmEditYear.Designer.cs">
+      <DependentUpon>frmEditYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\frmLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\frmLocation.Designer.cs">
+      <DependentUpon>frmLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\frmLocationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\frmLocationEdit.Designer.cs">
+      <DependentUpon>frmLocationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyObservation\frmMaxTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyObservation\frmMaxTemp.Designer.cs">
+      <DependentUpon>frmMaxTemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyObservation\frmMinTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyObservation\frmMinTemp.Designer.cs">
+      <DependentUpon>frmMinTemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyObservation\frmMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyObservation\frmMonth.Designer.cs">
+      <DependentUpon>frmMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyObservation\frmMonthID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyObservation\frmMonthID.Designer.cs">
+      <DependentUpon>frmMonthID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\frmSearchLoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\frmSearchLoc.Designer.cs">
+      <DependentUpon>frmSearchLoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yearly Observation\frmYearData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yearly Observation\frmYearData.Designer.cs">
+      <DependentUpon>frmYearData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yearly Observation\frmYearlyObsv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yearly Observation\frmYearlyObsv.Designer.cs">
+      <DependentUpon>frmYearlyObsv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Location.cs" />
+    <Compile Include="Classes\MonthlyObsv.cs" />
+    <Compile Include="Classes\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\Year.cs" />
+    <EmbeddedResource Include="Location\frmAddLocation.resx">
+      <DependentUpon>frmAddLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\frmLocationData.resx">
+      <DependentUpon>frmLocationData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyObservation\frmAmountRain.resx">
+      <DependentUpon>frmAmountRain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyObservation\frmFrostyDays.resx">
+      <DependentUpon>frmFrostyDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyObservation\frmHrsSun.resx">
+      <DependentUpon>frmHrsSun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yearly Observation\frmAddYear.resx">
+      <DependentUpon>frmAddYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyObservation\frmEditMonth.resx">
+      <DependentUpon>frmEditMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yearly Observation\frmAverageAmountRain.resx">
+      <DependentUpon>frmAverageAmountRain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yearly Observation\frmAverageFrost.resx">
+      <DependentUpon>frmAverageFrost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yearly Observation\frmAverageHrsSun.resx">
+      <DependentUpon>frmAverageHrsSun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yearly Observation\frmAverageMaxTemp.resx">
+      <DependentUpon>frmAverageMaxTemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yearly Observation\frmAverageMinTemp.resx">
+      <DependentUpon>frmAverageMinTemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yearly Observation\frmEditYear.resx">
+      <DependentUpon>frmEditYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\frmLocation.resx">
+      <DependentUpon>frmLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\frmLocationEdit.resx">
+      <DependentUpon>frmLocationEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyObservation\frmMaxTemp.resx">
+      <DependentUpon>frmMaxTemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyObservation\frmMinTemp.resx">
+      <DependentUpon>frmMinTemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyObservation\frmMonth.resx">
+      <DependentUpon>frmMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyObservation\frmMonthID.resx">
+      <DependentUpon>frmMonthID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\frmSearchLoc.resx">
+      <DependentUpon>frmSearchLoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yearly Observation\frmYearData.resx">
+      <DependentUpon>frmYearData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yearly Observation\frmYearlyObsv.resx">
+      <DependentUpon>frmYearlyObsv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetOfficeLogoSmall.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
